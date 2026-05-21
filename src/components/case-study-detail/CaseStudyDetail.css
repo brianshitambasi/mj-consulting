@@ -1,0 +1,31 @@
+.case-study-detail-wrapper { padding-top: 80px; background-color: #0a0a0a; min-height: 100vh; }
+.detail-hero { padding: 60px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.back-link { display: inline-block; color: white; text-decoration: none; margin-bottom: 30px; opacity: 0.8; }
+.detail-hero-content { text-align: center; color: white; }
+.detail-category { display: inline-block; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 50px; margin-bottom: 20px; }
+.detail-hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+.detail-container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+.detail-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+.stat-card { background: #1a1a1a; padding: 20px; border-radius: 15px; display: flex; align-items: center; gap: 15px; }
+.stat-icon { font-size: 2rem; }
+.stat-card small { color: #aaa; display: block; }
+.stat-card strong { color: white; }
+.detail-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+.detail-section { background: #1a1a1a; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+.detail-section h3 { color: #667eea; margin-bottom: 20px; }
+.detail-section p { color: #ccc; line-height: 1.8; }
+.tech-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+.tech-tag { background: #2a2a2a; padding: 8px 16px; border-radius: 50px; color: #667eea; border: 1px solid #667eea; }
+.results-list { display: flex; flex-direction: column; gap: 12px; }
+.result-item { display: flex; align-items: center; gap: 10px; color: #ccc; }
+.check { color: #10b981; font-size: 1.2rem; }
+.testimonial-card { background: linear-gradient(135deg, #667eea, #764ba2); padding: 30px; border-radius: 15px; margin-bottom: 20px; color: white; }
+.testimonial-card .quote { font-size: 1.1rem; font-style: italic; margin-bottom: 20px; }
+.testimonial-card .title { font-size: 0.9rem; opacity: 0.9; }
+.cta-card { background: #1a1a1a; padding: 30px; border-radius: 15px; text-align: center; }
+.cta-card h4 { color: white; margin-bottom: 20px; }
+.cta-btn { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; }
+@media (max-width: 768px) {
+  .detail-stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .detail-layout { grid-template-columns: 1fr; }
+}

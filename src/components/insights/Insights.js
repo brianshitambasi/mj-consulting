@@ -33,8 +33,8 @@ const Insights = () => {
       date: 'May 15, 2026',
       readTime: '8 min read',
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop',
-      excerpt: 'Moving beyond passive automation to autonomous systems that execute end-to-end business workflows. Discover how Agentic AI is transforming enterprise operations.',
-      content: 'The era of simple chatbots is coming to an end. Agentic AI represents a paradigm shift where AI systems can plan, execute, and adapt to achieve complex goals autonomously. Unlike traditional chatbots that respond to specific prompts, agentic AI systems understand context, make decisions, and take action across multiple systems...',
+      excerpt: 'Moving beyond passive automation to autonomous systems that execute end-to-end business workflows.',
+      content: 'The era of simple chatbots is coming to an end. Agentic AI represents a paradigm shift where AI systems can plan, execute, and adapt to achieve complex goals autonomously.',
       tags: ['AI', 'Automation', 'Future of Work'],
       featured: true
     },
@@ -47,8 +47,8 @@ const Insights = () => {
       date: 'May 10, 2026',
       readTime: '6 min read',
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=500&fit=crop',
-      excerpt: 'As organizations embrace multi-cloud strategies, maintaining data sovereignty has become a critical concern. Learn best practices for cloud data governance.',
-      content: 'Data sovereignty has emerged as a top priority for global enterprises. With regulations like GDPR, CCPA, and cross-border data transfer restrictions, organizations must carefully architect their cloud deployments to ensure compliance...',
+      excerpt: 'As organizations embrace multi-cloud strategies, maintaining data sovereignty has become a critical concern.',
+      content: 'Data sovereignty has emerged as a top priority for global enterprises. With regulations like GDPR, CCPA, and cross-border data transfer restrictions.',
       tags: ['Cloud', 'Security', 'Compliance'],
       featured: true
     },
@@ -61,8 +61,8 @@ const Insights = () => {
       date: 'May 5, 2026',
       readTime: '5 min read',
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=500&fit=crop',
-      excerpt: 'Headless architecture is revolutionizing e-commerce by decoupling frontend and backend, enabling unprecedented customization and speed.',
-      content: 'Traditional e-commerce platforms are giving way to headless architectures that separate the presentation layer from the commerce engine. This decoupling allows businesses to deliver consistent experiences across any channel...',
+      excerpt: 'Headless architecture is revolutionizing e-commerce by decoupling frontend and backend.',
+      content: 'Traditional e-commerce platforms are giving way to headless architectures that separate the presentation layer from the commerce engine.',
       tags: ['E-commerce', 'Digital Transformation'],
       featured: false
     },
@@ -75,8 +75,8 @@ const Insights = () => {
       date: 'April 28, 2026',
       readTime: '7 min read',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
-      excerpt: 'Modernizing legacy ERP systems is critical for digital transformation. Explore strategies for successful cloud migration and implementation.',
-      content: 'Legacy ERP systems often hold businesses back with rigid architectures and high maintenance costs. Cloud-native ERP solutions offer scalability, real-time insights, and lower total cost of ownership...',
+      excerpt: 'Modernizing legacy ERP systems is critical for digital transformation.',
+      content: 'Legacy ERP systems often hold businesses back with rigid architectures and high maintenance costs.',
       tags: ['ERP', 'Cloud Migration', 'Digital Transformation'],
       featured: false
     },
@@ -89,51 +89,9 @@ const Insights = () => {
       date: 'April 22, 2026',
       readTime: '6 min read',
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop',
-      excerpt: 'How AI and machine learning are transforming patient care through early intervention and personalized treatment plans.',
-      content: 'Predictive analytics is revolutionizing healthcare by identifying at-risk patients before critical events occur. Machine learning models can analyze patient data to predict readmission risks, disease progression, and treatment outcomes...',
+      excerpt: 'How AI and machine learning are transforming patient care.',
+      content: 'Predictive analytics is revolutionizing healthcare by identifying at-risk patients before critical events occur.',
       tags: ['Healthcare', 'AI', 'Analytics'],
-      featured: false
-    },
-    {
-      id: 6,
-      title: 'Fintech Innovation: Blockchain Beyond Cryptocurrency',
-      category: 'Fintech',
-      author: 'David Martinez',
-      authorRole: 'Financial Services Director',
-      date: 'April 18, 2026',
-      readTime: '5 min read',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop',
-      excerpt: 'Blockchain technology is finding powerful applications in banking, insurance, and supply chain finance beyond cryptocurrencies.',
-      content: 'While cryptocurrencies grabbed headlines, enterprise blockchain is quietly transforming financial services. Smart contracts, tokenization, and distributed ledgers are streamlining processes from trade finance to claims processing...',
-      tags: ['Fintech', 'Blockchain', 'Innovation'],
-      featured: false
-    },
-    {
-      id: 7,
-      title: 'Sustainable IT: Reducing Carbon Footprint in the Cloud',
-      category: 'Cloud',
-      author: 'Lisa Green',
-      authorRole: 'Sustainability Lead',
-      date: 'April 12, 2026',
-      readTime: '4 min read',
-      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=500&fit=crop',
-      excerpt: 'Organizations can significantly reduce their environmental impact through green cloud computing practices and efficient architectures.',
-      content: 'Sustainability is becoming a key consideration in IT strategy. By optimizing cloud resources, choosing green data centers, and implementing efficient architectures, organizations can reduce their carbon footprint while lowering costs...',
-      tags: ['Sustainability', 'Cloud', 'Green IT'],
-      featured: false
-    },
-    {
-      id: 8,
-      title: 'The Future of Work: Hybrid Models and Digital Collaboration',
-      category: 'Customer Experience',
-      author: 'John Roberts',
-      authorRole: 'CEO & Founder',
-      date: 'April 5, 2026',
-      readTime: '6 min read',
-      image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop',
-      excerpt: 'How technology is enabling seamless collaboration between remote and in-office teams in the hybrid work era.',
-      content: 'The pandemic accelerated the shift to remote work, but the future is hybrid. Organizations need digital tools and cultural changes to support effective collaboration across distributed teams...',
-      tags: ['Future of Work', 'Collaboration', 'Digital Transformation'],
       featured: false
     }
   ];
@@ -144,7 +102,6 @@ const Insights = () => {
       role: 'CEO & Founder',
       expertise: ['Business Strategy', 'Digital Transformation', 'Enterprise Architecture'],
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop',
-      bio: '15+ years experience in business consulting and enterprise architecture. Leading MJ&Roberts with a vision for resilient digital ecosystems.',
       linkedin: '#',
       twitter: '#'
     },
@@ -153,7 +110,6 @@ const Insights = () => {
       role: 'Senior Consultant',
       expertise: ['Strategic Planning', 'Operations', 'Change Management'],
       image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop',
-      bio: 'Expert in strategic planning, operations, and digital transformation with a focus on measurable business outcomes.',
       linkedin: '#',
       twitter: '#'
     },
@@ -162,7 +118,6 @@ const Insights = () => {
       role: 'ERP Practice Lead',
       expertise: ['ERP Implementation', 'Supply Chain', 'Business Process'],
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop',
-      bio: '15+ years implementing enterprise systems for global manufacturers and distributors.',
       linkedin: '#',
       twitter: '#'
     }
@@ -184,7 +139,6 @@ const Insights = () => {
         </div>
 
         <div className="insights-layout">
-          {/* Sidebar */}
           <aside className="insights-sidebar">
             <div className="trending-section">
               <h3>TRENDING TOPICS</h3>
@@ -234,10 +188,8 @@ const Insights = () => {
             </div>
           </aside>
 
-          {/* Main Content */}
           <main className="insights-content">
             {selectedArticle ? (
-              // Single Article View
               <div className="article-detail">
                 <button className="back-button" onClick={() => setSelectedArticle(null)}>
                   ← Back to all insights
@@ -276,9 +228,7 @@ const Insights = () => {
                 </div>
               </div>
             ) : (
-              // Articles Grid View
               <>
-                {/* Featured Articles */}
                 {selectedCategory === 'all' && (
                   <div className="featured-articles">
                     <h2>Featured Insights</h2>
@@ -304,7 +254,6 @@ const Insights = () => {
                   </div>
                 )}
 
-                {/* All Articles */}
                 <div className="all-articles">
                   <h2>{selectedCategory === 'all' ? 'Latest Insights' : `${selectedCategory} Insights`}</h2>
                   <div className="articles-grid">

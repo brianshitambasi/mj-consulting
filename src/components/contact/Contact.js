@@ -14,7 +14,8 @@ const Contact = () => {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Hello 👋 Welcome to MJ & Roberts Consulting. Ask me anything about our services, pricing, cloud, AI, ERP, CRM, DevOps, or digital transformation.",
+      text:
+        "Hello 👋 Welcome to MJ & Roberts Consulting. Ask me anything about cloud, AI, ERP, CRM, DevOps, cybersecurity, software engineering, or digital transformation.",
       isBot: true,
       timestamp: new Date().toLocaleTimeString(),
     },
@@ -27,14 +28,47 @@ const Contact = () => {
   const messagesEndRef = useRef(null);
   const inputRef = useRef(null);
 
-  const companyInfo = {
+  /* =========================
+     MASSIVE KNOWLEDGE BASE
+  ========================= */
+
+  const companyKnowledge = {
     services: [
       "IT Consulting",
       "Software Engineering",
       "Cloud Solutions",
-      "Managed IT Services",
       "DevOps Engineering",
+      "Cybersecurity",
       "AI & Automation",
+      "ERP Solutions",
+      "CRM Systems",
+      "Managed IT Services",
+      "Data Analytics",
+    ],
+
+    industries: [
+      "Healthcare",
+      "Finance",
+      "Retail",
+      "Manufacturing",
+      "Education",
+      "Telecommunications",
+      "Logistics",
+      "Government",
+    ],
+
+    technologies: [
+      "React",
+      "Node.js",
+      "Python",
+      "AWS",
+      "Azure",
+      "Google Cloud",
+      "Docker",
+      "Kubernetes",
+      "Salesforce",
+      "SAP",
+      "Power BI",
     ],
 
     contact: {
@@ -43,29 +77,112 @@ const Contact = () => {
     },
   };
 
+  /* =========================
+     BOT RESPONSE SYSTEM
+  ========================= */
+
   const getBotResponse = (message) => {
     const msg = message.toLowerCase();
 
+    // Greeting
+    if (
+      msg.includes("hello") ||
+      msg.includes("hi") ||
+      msg.includes("hey")
+    ) {
+      return "Hello 👋 Welcome to MJ & Roberts Consulting. How can I help you today?";
+    }
+
+    // Services
     if (msg.includes("service")) {
-      return `We offer:\n${companyInfo.services
+      return `We provide:\n\n${companyKnowledge.services
         .map((item) => `• ${item}`)
         .join("\n")}`;
     }
 
-    if (msg.includes("price") || msg.includes("cost")) {
-      return "Pricing depends on project requirements. Contact us for a custom quote.";
+    // AI
+    if (
+      msg.includes("ai") ||
+      msg.includes("artificial intelligence")
+    ) {
+      return "We build AI chatbots, automation systems, machine learning platforms, predictive analytics systems, and enterprise AI solutions.";
     }
 
-    if (msg.includes("contact")) {
-      return `📧 ${companyInfo.contact.email}\n📞 ${companyInfo.contact.phone}`;
+    // Cloud
+    if (
+      msg.includes("cloud") ||
+      msg.includes("aws") ||
+      msg.includes("azure")
+    ) {
+      return "We provide AWS, Azure, and Google Cloud architecture, migration, deployment, optimization, and cloud security solutions.";
     }
 
-    if (msg.includes("cloud")) {
-      return "We provide AWS, Azure, and Google Cloud migration and management solutions.";
+    // ERP
+    if (msg.includes("erp") || msg.includes("sap")) {
+      return "We implement ERP systems including SAP, Odoo, Oracle ERP, and Microsoft Dynamics.";
     }
 
-    return "Thanks for your message. Ask me about services, pricing, AI, CRM, ERP, cloud, DevOps, or digital transformation.";
+    // CRM
+    if (
+      msg.includes("crm") ||
+      msg.includes("salesforce")
+    ) {
+      return "We provide Salesforce, HubSpot, Zoho CRM, and Microsoft Dynamics CRM implementation and customization.";
+    }
+
+    // Cybersecurity
+    if (
+      msg.includes("security") ||
+      msg.includes("cyber")
+    ) {
+      return "Our cybersecurity services include penetration testing, vulnerability assessment, SIEM, endpoint protection, and security audits.";
+    }
+
+    // Technologies
+    if (
+      msg.includes("technology") ||
+      msg.includes("tech stack")
+    ) {
+      return `Technologies we use:\n\n${companyKnowledge.technologies
+        .map((item) => `• ${item}`)
+        .join("\n")}`;
+    }
+
+    // Industries
+    if (
+      msg.includes("industry") ||
+      msg.includes("industries")
+    ) {
+      return `Industries we serve:\n\n${companyKnowledge.industries
+        .map((item) => `• ${item}`)
+        .join("\n")}`;
+    }
+
+    // Pricing
+    if (
+      msg.includes("price") ||
+      msg.includes("pricing") ||
+      msg.includes("cost")
+    ) {
+      return "Pricing depends on project requirements, timelines, architecture complexity, integrations, and business goals. Contact us for a custom quote.";
+    }
+
+    // Contact
+    if (
+      msg.includes("contact") ||
+      msg.includes("email") ||
+      msg.includes("phone")
+    ) {
+      return `📧 ${companyKnowledge.contact.email}\n📞 ${companyKnowledge.contact.phone}`;
+    }
+
+    // Default
+    return "Thanks for your message. Ask me about AI, ERP, CRM, cloud, DevOps, cybersecurity, software engineering, or digital transformation.";
   };
+
+  /* =========================
+     SEND MESSAGE
+  ========================= */
 
   const handleSendMessage = () => {
     if (!inputMessage.trim()) return;
@@ -78,6 +195,7 @@ const Contact = () => {
     };
 
     setMessages((prev) => [...prev, userMessage]);
+
     setInputMessage("");
     setIsTyping(true);
 
@@ -90,9 +208,14 @@ const Contact = () => {
       };
 
       setMessages((prev) => [...prev, botMessage]);
+
       setIsTyping(false);
     }, 1000);
   };
+
+  /* =========================
+     ENTER KEY
+  ========================= */
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -101,6 +224,10 @@ const Contact = () => {
     }
   };
 
+  /* =========================
+     IMAGE FALLBACK
+  ========================= */
+
   const handleImageError = (id) => {
     setImgErrors((prev) => ({
       ...prev,
@@ -108,15 +235,27 @@ const Contact = () => {
     }));
   };
 
+  /* =========================
+     AUTO SCROLL
+  ========================= */
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({
       behavior: "smooth",
     });
   }, [messages]);
 
+  /* =========================
+     AUTO FOCUS
+  ========================= */
+
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
+
+  /* =========================
+     FOUNDERS
+  ========================= */
 
   const owners = [
     {
@@ -126,12 +265,17 @@ const Contact = () => {
       email: "info@mjroberts.com",
       phone: "+254723156066",
       whatsapp: "254723156066",
-      avatar: imgErrors[1] ? fallbackImage1 : founder1Image,
-      bio: "15+ years of enterprise technology and digital transformation leadership.",
+      avatar: imgErrors[1]
+        ? fallbackImage1
+        : founder1Image,
+
+      bio:
+        "15+ years of enterprise technology and digital transformation leadership.",
+
       expertise: [
         "Leadership",
-        "Digital Transformation",
         "Business Strategy",
+        "Digital Transformation",
       ],
     },
 
@@ -142,49 +286,81 @@ const Contact = () => {
       email: "info@mjroberts.com",
       phone: "+254723156066",
       whatsapp: "254723156066",
-      avatar: imgErrors[2] ? fallbackImage2 : founder2Image,
-      bio: "Expert in cloud architecture, AI systems, and scalable infrastructure.",
-      expertise: ["Cloud", "AI/ML", "DevOps"],
+      avatar: imgErrors[2]
+        ? fallbackImage2
+        : founder2Image,
+
+      bio:
+        "Expert in cloud architecture, AI systems, and scalable infrastructure.",
+
+      expertise: [
+        "Cloud",
+        "AI/ML",
+        "DevOps",
+      ],
     },
   ];
 
+  /* =========================
+     JSX
+  ========================= */
+
   return (
     <div className="contact-page-wrapper">
+
       {/* HERO */}
       <div className="contact-hero">
         <div className="contact-hero-content">
           <h1>MJ & Roberts Consulting</h1>
-          <p>Your trusted digital transformation partner.</p>
+          <p>
+            Your trusted digital transformation partner.
+          </p>
         </div>
       </div>
 
       <div className="contact-container">
+
         {/* CHATBOT */}
         <div className="chatbot-card">
+
           <div className="chatbot-header">
             <div>
               <h3>🤖 AI Assistant</h3>
-              <p>Ask anything about our company</p>
+              <p>
+                Ask anything about our company
+              </p>
             </div>
 
-            <span className="chat-status">Online</span>
+            <span className="chat-status">
+              Online
+            </span>
           </div>
 
-          {/* MESSAGES */}
+          {/* CHAT MESSAGES */}
           <div className="chatbot-messages">
+
             {messages.map((msg) => (
               <div
                 key={msg.id}
-                className={`chat-message ${msg.isBot ? "bot" : "user"}`}
+                className={`chat-message ${
+                  msg.isBot ? "bot" : "user"
+                }`}
               >
                 <div className="message-bubble">
-                  <div className="message-text">{msg.text}</div>
 
-                  <div className="message-time">{msg.timestamp}</div>
+                  <div className="message-text">
+                    {msg.text}
+                  </div>
+
+                  <div className="message-time">
+                    {msg.timestamp}
+                  </div>
+
                 </div>
               </div>
             ))}
 
+            {/* TYPING */}
             {isTyping && (
               <div className="chat-message bot">
                 <div className="message-bubble">
@@ -202,13 +378,16 @@ const Contact = () => {
 
           {/* INPUT */}
           <div className="chatbot-input-area">
+
             <input
               ref={inputRef}
               type="text"
               value={inputMessage}
-              onChange={(e) => setInputMessage(e.target.value)}
+              onChange={(e) =>
+                setInputMessage(e.target.value)
+              }
               onKeyPress={handleKeyPress}
-              placeholder="Ask about services, pricing, AI, cloud..."
+              placeholder="Ask about AI, cloud, ERP..."
               className="chat-input-field"
             />
 
@@ -218,13 +397,17 @@ const Contact = () => {
             >
               Send
             </button>
+
           </div>
 
-          {/* SUGGESTIONS */}
+          {/* QUICK BUTTONS */}
           <div className="chat-suggestions">
+
             <button
               onClick={() =>
-                setInputMessage("What services do you offer?")
+                setInputMessage(
+                  "What services do you offer?"
+                )
               }
             >
               Services
@@ -232,7 +415,19 @@ const Contact = () => {
 
             <button
               onClick={() =>
-                setInputMessage("Tell me about cloud solutions")
+                setInputMessage(
+                  "Tell me about AI solutions"
+                )
+              }
+            >
+              AI
+            </button>
+
+            <button
+              onClick={() =>
+                setInputMessage(
+                  "Tell me about cloud solutions"
+                )
               }
             >
               Cloud
@@ -240,71 +435,97 @@ const Contact = () => {
 
             <button
               onClick={() =>
-                setInputMessage("How much does it cost?")
+                setInputMessage(
+                  "What industries do you serve?"
+                )
               }
             >
-              Pricing
+              Industries
             </button>
 
             <button
               onClick={() =>
-                setInputMessage("Contact information")
+                setInputMessage(
+                  "Contact information"
+                )
               }
             >
               Contact
             </button>
+
           </div>
         </div>
 
         {/* TEAM */}
         <div className="team-section">
+
           <div className="team-header">
             <h2>Meet Our Founders</h2>
 
-            <p>The leadership behind MJ & Roberts Consulting</p>
+            <p>
+              The leadership behind MJ & Roberts Consulting
+            </p>
           </div>
 
           <div className="team-grid">
+
             {owners.map((owner) => (
-              <div key={owner.id} className="team-card">
+              <div
+                key={owner.id}
+                className="team-card"
+              >
+
                 <div className="team-avatar">
                   <img
                     src={owner.avatar}
                     alt={owner.name}
-                    onError={() => handleImageError(owner.id)}
+                    onError={() =>
+                      handleImageError(owner.id)
+                    }
                   />
                 </div>
 
                 <div className="team-info">
+
                   <h3>{owner.name}</h3>
 
                   <span className="team-badge">
                     {owner.title}
                   </span>
 
-                  <p className="team-bio">{owner.bio}</p>
+                  <p className="team-bio">
+                    {owner.bio}
+                  </p>
 
                   <div className="team-expertise">
-                    {owner.expertise.map((item, index) => (
-                      <span
-                        key={index}
-                        className="expertise-badge"
-                      >
-                        {item}
-                      </span>
-                    ))}
+
+                    {owner.expertise.map(
+                      (item, index) => (
+                        <span
+                          key={index}
+                          className="expertise-badge"
+                        >
+                          {item}
+                        </span>
+                      )
+                    )}
+
                   </div>
 
                   <div className="team-contact-info">
+
                     <div className="contact-row">
-                      📧{" "}
-                      <a href={`mailto:${owner.email}`}>
+                      📧
+                      <a
+                        href={`mailto:${owner.email}`}
+                      >
                         {owner.email}
                       </a>
                     </div>
 
                     <div className="contact-row">
-                      💬{" "}
+                      💬
+
                       <a
                         href={`https://wa.me/${owner.whatsapp}`}
                         target="_blank"
@@ -313,15 +534,19 @@ const Contact = () => {
                         {owner.phone}
                       </a>
                     </div>
+
                   </div>
+
                 </div>
               </div>
             ))}
+
           </div>
         </div>
 
         {/* STATS */}
         <div className="stats-grid">
+
           <div className="stat-card">
             <h3>300+</h3>
             <p>Clients</p>
@@ -341,6 +566,7 @@ const Contact = () => {
             <h3>98%</h3>
             <p>Satisfaction</p>
           </div>
+
         </div>
       </div>
     </div>

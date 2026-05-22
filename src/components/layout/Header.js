@@ -14,67 +14,67 @@ const Header = () => {
     }
   };
 
-  // Dropdown data
+  // Dropdown data with proper emojis
   const servicesDropdown = [
-    { name: 'IT Consulting', path: '/services/it-consulting', icon: 'í³Š' },
-    { name: 'Software Engineering', path: '/services/software-engineering', icon: 'í²»' },
+    { name: 'IT Consulting', path: '/services/it-consulting', icon: 'ğŸ“Š' },
+    { name: 'Software Engineering', path: '/services/software-engineering', icon: 'ğŸ’»' },
     { name: 'Application Services', path: '/services/application-services', icon: 'âš™ï¸' },
-    { name: 'Managed IT Services', path: '/services/managed-it', icon: 'í¶¥ï¸' },
-    { name: 'DevOps & Platform', path: '/services/devops', icon: 'íº€' },
+    { name: 'Managed IT Services', path: '/services/managed-it', icon: 'ğŸ–¥ï¸' },
+    { name: 'DevOps & Platform', path: '/services/devops', icon: 'ğŸš€' },
     { name: 'Quality Assurance', path: '/services/qa', icon: 'âœ…' },
-    { name: 'Maintenance & Support', path: '/services/maintenance', icon: 'í´§' },
-    { name: 'Smart Teams', path: '/services/smart-teams', icon: 'í±¥' }
+    { name: 'Maintenance & Support', path: '/services/maintenance', icon: 'ğŸ”§' },
+    { name: 'Smart Teams', path: '/services/smart-teams', icon: 'ğŸ‘¥' }
   ];
 
   const solutionsDropdown = [
-    { name: 'CRM Solutions', path: '/solutions/crm', icon: 'í´' },
-    { name: 'ERP Implementation', path: '/solutions/erp', icon: 'í¿­' },
-    { name: 'Digital Commerce', path: '/solutions/digital-commerce', icon: 'í»’' },
-    { name: 'Data Analytics & BI', path: '/solutions/data-analytics', icon: 'í³Š' },
-    { name: 'AI & RPA', path: '/solutions/ai-rpa', icon: 'í´–' },
-    { name: 'AR/VR & IoT', path: '/solutions/ar-vr-iot', icon: 'íµ½' }
+    { name: 'CRM Solutions', path: '/solutions/crm', icon: 'ğŸ¤' },
+    { name: 'ERP Implementation', path: '/solutions/erp', icon: 'ğŸ­' },
+    { name: 'Digital Commerce', path: '/solutions/digital-commerce', icon: 'ğŸ›’' },
+    { name: 'Data Analytics & BI', path: '/solutions/data-analytics', icon: 'ğŸ“Š' },
+    { name: 'AI & RPA', path: '/solutions/ai-rpa', icon: 'ğŸ¤–' },
+    { name: 'AR/VR & IoT', path: '/solutions/ar-vr-iot', icon: 'ğŸ¥½' }
   ];
 
   const technologiesDropdown = [
     { name: 'Salesforce', path: '/technologies/salesforce', icon: 'â˜ï¸' },
     { name: 'AWS', path: '/technologies/aws', icon: 'â˜ï¸' },
-    { name: 'Microsoft Azure', path: '/technologies/azure', icon: 'í²™' },
-    { name: 'SAP Commerce', path: '/technologies/sap', icon: 'í³Š' },
-    { name: 'Odoo', path: '/technologies/odoo', icon: 'í´§' },
-    { name: 'Atlassian', path: '/technologies/atlassian', icon: 'í³‹' },
-    { name: 'Power BI', path: '/technologies/powerbi', icon: 'í³ˆ' },
-    { name: 'Google Cloud', path: '/technologies/google-cloud', icon: 'í´µ' }
+    { name: 'Microsoft Azure', path: '/technologies/azure', icon: 'ğŸ’™' },
+    { name: 'SAP Commerce', path: '/technologies/sap', icon: 'ğŸ“Š' },
+    { name: 'Odoo', path: '/technologies/odoo', icon: 'ğŸ”§' },
+    { name: 'Atlassian', path: '/technologies/atlassian', icon: 'ğŸ“‹' },
+    { name: 'Power BI', path: '/technologies/powerbi', icon: 'ğŸ“ˆ' },
+    { name: 'Google Cloud', path: '/technologies/google-cloud', icon: 'ğŸ”µ' }
   ];
 
   const industriesDropdown = [
-    { name: 'Healthcare', path: '/industries/healthcare', icon: 'í¿¥' },
-    { name: 'Finance', path: '/industries/finance', icon: 'í²°' },
-    { name: 'Manufacturing', path: '/industries/manufacturing', icon: 'í¿­' },
-    { name: 'Retail', path: '/industries/retail', icon: 'í»ï¸' },
-    { name: 'Insurance', path: '/industries/insurance', icon: 'í»¡ï¸' },
-    { name: 'Software & Hi-Tech', path: '/industries/software', icon: 'í²»' },
-    { name: 'Professional Services', path: '/industries/professional', icon: 'í±”' }
+    { name: 'Healthcare', path: '/industries/healthcare', icon: 'ğŸ¥' },
+    { name: 'Finance', path: '/industries/finance', icon: 'ğŸ’°' },
+    { name: 'Manufacturing', path: '/industries/manufacturing', icon: 'ğŸ­' },
+    { name: 'Retail', path: '/industries/retail', icon: 'ğŸ›ï¸' },
+    { name: 'Insurance', path: '/industries/insurance', icon: 'ğŸ›¡ï¸' },
+    { name: 'Software & Hi-Tech', path: '/industries/software', icon: 'ğŸ’»' },
+    { name: 'Professional Services', path: '/industries/professional', icon: 'ğŸ‘”' }
   ];
 
   const insightsDropdown = [
-    { name: 'Artificial Intelligence', path: '/insights/ai', icon: 'í´–' },
+    { name: 'Artificial Intelligence', path: '/insights/ai', icon: 'ğŸ¤–' },
     { name: 'Cloud Computing', path: '/insights/cloud', icon: 'â˜ï¸' },
-    { name: 'Digital Transformation', path: '/insights/digital-transformation', icon: 'í´„' },
-    { name: 'Cybersecurity', path: '/insights/cybersecurity', icon: 'í´’' },
-    { name: 'Data Analytics', path: '/insights/data-analytics', icon: 'í³Š' },
-    { name: 'ERP', path: '/insights/erp', icon: 'í³ˆ' },
+    { name: 'Digital Transformation', path: '/insights/digital-transformation', icon: 'ğŸ”„' },
+    { name: 'Cybersecurity', path: '/insights/cybersecurity', icon: 'ğŸ”’' },
+    { name: 'Data Analytics', path: '/insights/data-analytics', icon: 'ğŸ“Š' },
+    { name: 'ERP', path: '/insights/erp', icon: 'ğŸ“ˆ' },
     { name: 'Customer Experience', path: '/insights/cx', icon: 'â­' },
-    { name: 'Industry Trends', path: '/insights/trends', icon: 'í³°' }
+    { name: 'Industry Trends', path: '/insights/trends', icon: 'ğŸ“°' }
   ];
 
   const companyDropdown = [
-    { name: 'Overview', path: '/company/overview', icon: 'ï¿½ï¿½' },
-    { name: 'Our Approach', path: '/company/approach', icon: 'í¾¯' },
-    { name: 'Leadership Team', path: '/company/team', icon: 'í±¥' },
-    { name: 'Partnerships', path: '/company/partnerships', icon: 'í´' },
-    { name: 'Careers', path: '/company/careers', icon: 'í²¼' },
-    { name: 'News & Press', path: '/company/news', icon: 'í³°' },
-    { name: 'Awards', path: '/company/awards', icon: 'í¿†' }
+    { name: 'Overview', path: '/company/overview', icon: 'ğŸ¢' },
+    { name: 'Our Approach', path: '/company/approach', icon: 'ğŸ¯' },
+    { name: 'Leadership Team', path: '/company/team', icon: 'ğŸ‘¥' },
+    { name: 'Partnerships', path: '/company/partnerships', icon: 'ğŸ¤' },
+    { name: 'Careers', path: '/company/careers', icon: 'ğŸ’¼' },
+    { name: 'News & Press', path: '/company/news', icon: 'ğŸ“°' },
+    { name: 'Awards', path: '/company/awards', icon: 'ğŸ†' }
   ];
 
   return (

@@ -352,3 +352,47 @@
     justify-content: flex-start;
   }
 }
+
+/* Additional icon styles */
+.tech-header-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.tech-nav-icon {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.tech-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.tech-nav-btn:hover {
+  background: #eef2f6;
+  transform: translateX(4px);
+}
+
+.tech-nav-btn.active {
+  background: #0a2472;
+  color: white;
+}
+
+.tech-nav-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

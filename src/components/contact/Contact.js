@@ -69,7 +69,7 @@ const Contact = () => {
       id: 1,
       name: "Mohamed Jeylani Sayed",
       title: "Co-Founder & CEO",
-      email: "mohamed@mjroberts.com",
+      email: "info@mjroberts.com",
       phone: "+254723156066",
       whatsapp: "254723156066",
       bio: "15+ years of experience in enterprise technology and digital transformation. Visionary leader driving MJ&Roberts' mission to bridge the innovation-infrastructure gap.",
@@ -81,7 +81,7 @@ const Contact = () => {
       id: 2,
       name: "Roberts Vildon Elisha",
       title: "Co-Founder & CTO",
-      email: "roberts@mjroberts.com",
+      email: "info@mjroberts.com",
       phone: "+254723156066",
       whatsapp: "254723156066",
       bio: "Technology architect with deep expertise in cloud, AI, and resilient system design. Leads engineering teams to deliver scalable, secure solutions for global enterprises.",
@@ -107,7 +107,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    const recipientEmail = localStorage.getItem('applicationRecipient') || 'brianshitambasi270@gmail.com';
+    const recipientEmail = 'info@mjroberts.com';
     const emailSubject = formData.subject;
     const emailBody = `
 Name: ${formData.name}
@@ -154,25 +154,25 @@ WhatsApp: +254 723 156066
           {/* Contact Info Card */}
           <div className="contact-info-card">
             <h4>
-              <span className="contact-icon-head">í³</span>
+              <span className="contact-icon-head">ğŸ“</span>
               Contact Information
             </h4>
             
             <div className="contact-details-list">
               <div className="contact-detail-item">
                 <div className="contact-icon-circle email-bg">
-                  <span>í³§</span>
+                  <span>ğŸ“§</span>
                 </div>
                 <div>
                   <small>Email Us</small>
-                  <p>brianshitambasi270@gmail.com</p>
-                  <small className="text-muted">For jobs: brianshitambasi270@gmail.com</small>
+                  <p>info@mjroberts.com</p>
+                  <small className="text-muted">For jobs: careers@mjroberts.com</small>
                 </div>
               </div>
               
               <div className="contact-detail-item">
                 <div className="contact-icon-circle phone-bg">
-                  <span>í³</span>
+                  <span>ğŸ“</span>
                 </div>
                 <div>
                   <small>Call Us</small>
@@ -182,7 +182,7 @@ WhatsApp: +254 723 156066
               
               <div className="contact-detail-item">
                 <div className="contact-icon-circle whatsapp-bg">
-                  <span>í²¬</span>
+                  <span>ğŸ’¬</span>
                 </div>
                 <div>
                   <small>WhatsApp</small>
@@ -192,7 +192,7 @@ WhatsApp: +254 723 156066
               
               <div className="contact-detail-item">
                 <div className="contact-icon-circle location-bg">
-                  <span>í³</span>
+                  <span>ğŸ“</span>
                 </div>
                 <div>
                   <small>Visit Us</small>
@@ -203,17 +203,17 @@ WhatsApp: +254 723 156066
 
             <div className="office-hours">
               <h6>Office Hours</h6>
-              <p>í³… Mon-Fri: 9:00 AM - 6:00 PM (GMT)</p>
-              <p>í³… Saturday: 10:00 AM - 2:00 PM</p>
-              <p>í³… Sunday: Closed</p>
+              <p>ğŸ“… Mon-Fri: 9:00 AM - 6:00 PM (GMT)</p>
+              <p>ğŸ“… Saturday: 10:00 AM - 2:00 PM</p>
+              <p>ğŸ“… Sunday: Closed</p>
             </div>
 
             <div className="whatsapp-buttons">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-chat-btn">
-                í²¬ Chat on WhatsApp
+                ğŸ’¬ Chat on WhatsApp
               </a>
               <a href={whatsappCallLink} target="_blank" rel="noopener noreferrer" className="whatsapp-call-btn">
-                í³ Call via WhatsApp
+                ğŸ“ Call via WhatsApp
               </a>
             </div>
           </div>
@@ -224,7 +224,7 @@ WhatsApp: +254 723 156066
             <p>{applicationDetected ? 'Please review your application details below and click send to submit your job application.' : 'Fill out the form below and we\'ll get back to you within 24 hours'}</p>
             
             <div className="whatsapp-alert">
-              í²¬ <strong>Quick Support:</strong> Chat with us on WhatsApp at <strong>+254 723 156066</strong> for immediate assistance
+              ğŸ’¬ <strong>Quick Support:</strong> Chat with us on WhatsApp at <strong>+254 723 156066</strong> for immediate assistance
             </div>
             
             {submitted && (
@@ -272,7 +272,7 @@ WhatsApp: +254 723 156066
         <div className="services-section">
           <div className="services-card">
             <h3>
-              <span className="rocket-icon">íº€</span>
+              <span className="rocket-icon">ğŸš€</span>
               Our Services
             </h3>
             <div className="services-grid">
@@ -290,7 +290,7 @@ WhatsApp: +254 723 156066
         <div className="team-section">
           <div className="team-header">
             <h2>
-              <span className="user-icon">í±”</span>
+              <span className="user-icon">ğŸ‘”</span>
               Meet Our Founders
             </h2>
             <p>The visionaries behind MJ&Roberts Consulting</p>
@@ -316,19 +316,19 @@ WhatsApp: +254 723 156066
                     
                     <div className="team-contact-info">
                       <div className="contact-row">
-                        <span className="contact-icon">í³§</span>
+                        <span className="contact-icon">ğŸ“§</span>
                         <a href={`mailto:${owner.email}`}>{owner.email}</a>
                       </div>
                       <div className="contact-row">
-                        <span className="contact-icon">í²¬</span>
+                        <span className="contact-icon">ğŸ’¬</span>
                         <a href={`https://wa.me/${owner.whatsapp}`} target="_blank" rel="noopener noreferrer">WhatsApp: {owner.phone}</a>
                       </div>
                     </div>
 
                     <div className="team-social-links">
                       <a href={owner.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-link linkedin">in</a>
-                      <a href={owner.social.twitter} target="_blank" rel="noopener noreferrer" className="social-link twitter">íµ</a>
-                      <a href={`https://wa.me/${owner.whatsapp}`} target="_blank" rel="noopener noreferrer" className="social-link whatsapp">í²¬</a>
+                      <a href={owner.social.twitter} target="_blank" rel="noopener noreferrer" className="social-link twitter">ğ•</a>
+                      <a href={`https://wa.me/${owner.whatsapp}`} target="_blank" rel="noopener noreferrer" className="social-link whatsapp">ğŸ’¬</a>
                     </div>
                   </div>
                 </div>
@@ -341,17 +341,17 @@ WhatsApp: +254 723 156066
         <div className="stats-section">
           <div className="stats-grid">
             <div className="stat-card">
-              <div className="stat-icon">í±¥</div>
+              <div className="stat-icon">ğŸ‘¥</div>
               <h3>300+</h3>
               <p>Enterprise Clients</p>
             </div>
             <div className="stat-card">
-              <div className="stat-icon">í¿†</div>
+              <div className="stat-icon">ğŸ†</div>
               <h3>500+</h3>
               <p>Projects Completed</p>
             </div>
             <div className="stat-card">
-              <div className="stat-icon">í¼</div>
+              <div className="stat-icon">ğŸŒ</div>
               <h3>15+</h3>
               <p>Countries Served</p>
             </div>

@@ -13,7 +13,9 @@ const Solutions = () => {
       platform: 'Salesforce & Dynamics 365',
       description: 'Full-cycle implementation and Zero-Copy Integration with data lakes',
       benefits: ['40% sales boost', '35% CSAT increase', '60% data cost reduction'],
-      color: '#0a2472'
+      color: '#0a2472',
+      image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=350&fit=crop',
+      longDescription: 'Transform your customer relationships with our comprehensive CRM implementation and optimization services.'
     },
     {
       id: 'erp',
@@ -22,7 +24,9 @@ const Solutions = () => {
       platform: 'SAP & Odoo',
       description: 'Strategic consultation and legacy-to-cloud migration',
       benefits: ['50% less manual work', '45% faster close', '60% inventory accuracy'],
-      color: '#123499'
+      color: '#123499',
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=350&fit=crop',
+      longDescription: 'Unify your business operations with comprehensive ERP systems that streamline workflows.'
     },
     {
       id: 'digital-commerce',
@@ -31,7 +35,9 @@ const Solutions = () => {
       platform: 'Headless & Payment Integration',
       description: 'Headless commerce development and global payment gateway integration',
       benefits: ['60% faster loads', '45% higher conversions', '50% less abandonment'],
-      color: '#051650'
+      color: '#051650',
+      image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=350&fit=crop',
+      longDescription: 'Create exceptional shopping experiences with headless commerce solutions.'
     },
     {
       id: 'data-analytics',
@@ -40,7 +46,9 @@ const Solutions = () => {
       platform: 'Power BI & Predictive Modeling',
       description: 'Power BI dashboards and predictive data modeling',
       benefits: ['70% faster decisions', '55% better forecasts', 'Real-time visibility'],
-      color: '#00072d'
+      color: '#00072d',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=350&fit=crop',
+      longDescription: 'Turn your data into actionable insights with our BI solutions.'
     },
     {
       id: 'ai-rpa',
@@ -49,7 +57,9 @@ const Solutions = () => {
       platform: 'Autonomous Agentic AI',
       description: 'Autonomous Agentic AI and robotic process automation',
       benefits: ['80% automation', '90% error reduction', '24/7 operations'],
-      color: '#5ea173'
+      color: '#5ea173',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=350&fit=crop',
+      longDescription: 'Leverage cutting-edge AI and robotic process automation.'
     },
     {
       id: 'ar-vr-iot',
@@ -58,8 +68,21 @@ const Solutions = () => {
       platform: 'Digital Twin Development',
       description: 'Immersive "Digital Twin" development and edge-device integration',
       benefits: ['50% faster training', '40% maintenance reduction', 'Real-time monitoring'],
-      color: '#0a2472'
+      color: '#0a2472',
+      image: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=600&h=350&fit=crop',
+      longDescription: 'Create immersive experiences with AR/VR and IoT solutions.'
     }
+  ];
+
+  const features = [
+    { icon: '🚀', title: 'Fast Implementation', description: 'Average 3-month deployment' },
+    { icon: '🔒', title: 'Enterprise Security', description: 'ISO 27001 certified' },
+    { icon: '🏆', title: 'Award-Winning', description: 'Industry recognition' },
+    { icon: '👥', title: '24/7 Support', description: 'Global support team' },
+    { icon: '💰', title: 'Cost Effective', description: '30-50% cost reduction' },
+    { icon: '🌍', title: 'Global Reach', description: '40+ countries served' },
+    { icon: '⚡', title: 'High Performance', description: '99.99% uptime' },
+    { icon: '🎯', title: 'Tailored Solutions', description: 'Custom to your needs' }
   ];
 
   useEffect(() => {
@@ -121,22 +144,27 @@ const Solutions = () => {
         <div className="solutions-grid">
           {solutions.map((solution, index) => (
             <div key={index} className="solution-card" style={{ borderTopColor: solution.color }}>
-              <div className="solution-icon" style={{ color: solution.color, backgroundColor: `${solution.color}15` }}>
-                {solution.icon}
+              <div className="solution-image-container">
+                <img src={solution.image} alt={solution.title} className="solution-card-image" />
+                <div className="solution-icon-overlay" style={{ backgroundColor: solution.color }}>
+                  <span className="solution-icon">{solution.icon}</span>
+                </div>
               </div>
-              <h3>{solution.title}</h3>
-              <p className="solution-platform" style={{ color: solution.color }}>{solution.platform}</p>
-              <p className="solution-desc">{solution.description}</p>
-              <div className="solution-benefits">
-                {solution.benefits.map((benefit, idx) => (
-                  <div key={idx} className="benefit-item">
-                    <span className="check-mark">✓</span> {benefit}
-                  </div>
-                ))}
+              <div className="solution-card-content">
+                <h3>{solution.title}</h3>
+                <p className="solution-platform" style={{ color: solution.color }}>{solution.platform}</p>
+                <p className="solution-desc">{solution.description}</p>
+                <div className="solution-benefits">
+                  {solution.benefits.map((benefit, idx) => (
+                    <div key={idx} className="benefit-item">
+                      <span className="check-mark">✓</span> {benefit}
+                    </div>
+                  ))}
+                </div>
+                <Link to={`/solutions/${solution.id}`} className="solution-link-btn">
+                  Explore Solution →
+                </Link>
               </div>
-              <Link to={`/solutions/${solution.id}`} className="solution-link-btn">
-                Explore Solution →
-              </Link>
             </div>
           ))}
         </div>
@@ -144,26 +172,13 @@ const Solutions = () => {
         <div className="why-choose-us">
           <h2>Why Choose Our Solutions?</h2>
           <div className="features-grid">
-            <div className="feature-item">
-              <div className="feature-icon">🚀</div>
-              <h4>Fast Implementation</h4>
-              <p>Average 3-month deployment</p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon">🔒</div>
-              <h4>Enterprise Security</h4>
-              <p>ISO 27001 certified</p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon">🏆</div>
-              <h4>Award-Winning</h4>
-              <p>Industry recognition</p>
-            </div>
-            <div className="feature-item">
-              <div className="feature-icon">👥</div>
-              <h4>24/7 Support</h4>
-              <p>Global support team</p>
-            </div>
+            {features.map((feature, idx) => (
+              <div key={idx} className="feature-item">
+                <div className="feature-icon">{feature.icon}</div>
+                <h4>{feature.title}</h4>
+                <p>{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
 

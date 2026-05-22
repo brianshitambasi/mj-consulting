@@ -22,6 +22,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png',
+      icon: '☁️',
       color: '#00A1E0',
       certifications: ['Salesforce Certified Administrator', 'Salesforce Certified Developer', 'Salesforce Certified Architect']
     },
@@ -42,6 +43,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png',
+      icon: '☁️',
       color: '#FF9900',
       certifications: ['AWS Certified Solutions Architect', 'AWS Certified Developer', 'AWS Certified DevOps Engineer']
     },
@@ -62,6 +64,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1622014100232-84fa90d13f7f?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png',
+      icon: '💙',
       color: '#0078D4',
       certifications: ['Azure Solutions Architect', 'Azure Developer Associate', 'Azure DevOps Engineer']
     },
@@ -82,6 +85,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/1200px-SAP_2011_logo.svg.png',
+      icon: '📊',
       color: '#0FAAFF',
       certifications: ['SAP Certified Associate', 'SAP Commerce Cloud Consultant']
     },
@@ -102,6 +106,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Odoo_logo.svg/1200px-Odoo_logo.svg.png',
+      icon: '🔧',
       color: '#714B67',
       certifications: ['Odoo Certified Partner', 'Odoo Functional Consultant']
     },
@@ -122,6 +127,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Atlassian_logo.svg/1200px-Atlassian_logo.svg.png',
+      icon: '📋',
       color: '#0052CC',
       certifications: ['Atlassian Gold Partner', 'Jira Administrator', 'Confluence Specialist']
     },
@@ -142,6 +148,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png',
+      icon: '📈',
       color: '#F2C811',
       certifications: ['Power BI Data Analyst', 'Power BI Developer']
     },
@@ -162,6 +169,7 @@ const Technologies = () => {
       ],
       image: 'https://images.unsplash.com/photo-1573804633927-b8b3b21ab6e8?w=600&h=400&fit=crop',
       logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1200px-Google_Cloud_logo.svg.png',
+      icon: '🔵',
       color: '#4285F4',
       certifications: ['Google Cloud Architect', 'Google Data Engineer', 'Cloud Developer']
     }
@@ -185,6 +193,7 @@ const Technologies = () => {
                   className={`tech-nav-btn ${selectedTech === tech ? 'active' : ''}`}
                   onClick={() => setSelectedTech(tech)}
                 >
+                  <span className="tech-nav-icon">{technologiesData[tech].icon}</span>
                   <img src={technologiesData[tech].logo} alt={tech} className="tech-nav-logo" />
                   <span>{tech}</span>
                 </button>
@@ -196,6 +205,9 @@ const Technologies = () => {
           <main className="tech-detail">
             <div className="tech-header">
               <div className="tech-header-info">
+                <div className="tech-header-icon" style={{ color: currentTech.color }}>
+                  {currentTech.icon}
+                </div>
                 <h2>{currentTech.fullName}</h2>
                 <p className="tech-description">{currentTech.description}</p>
               </div>

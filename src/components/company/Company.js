@@ -64,12 +64,12 @@ const Company = () => {
   ];
 
   const coreValues = [
-    { title: 'Platform Neutrality', description: 'Expert Inter-Cloud Orchestration ensures your stack is dictated by business logic, not vendor lock-in.', icon: 'í´—' },
-    { title: 'Agentic Pioneers', description: 'We move beyond passive automation to Agentic AI, building autonomous systems that execute end-to-end business workflows.', icon: 'í´–' },
-    { title: 'Fiscal Sovereignty', description: 'We treat cloud spend as an engineering metric, applying rigorous FinOps to ensure every cent drives measurable ROI.', icon: 'í²°' },
+    { title: 'Platform Neutrality', description: 'Expert Inter-Cloud Orchestration ensures your stack is dictated by business logic, not vendor lock-in.', icon: 'ğŸ”—' },
+    { title: 'Agentic Pioneers', description: 'We move beyond passive automation to Agentic AI, building autonomous systems that execute end-to-end business workflows.', icon: 'ğŸ¤–' },
+    { title: 'Fiscal Sovereignty', description: 'We treat cloud spend as an engineering metric, applying rigorous FinOps to ensure every cent drives measurable ROI.', icon: 'ğŸ’°' },
     { title: 'Engineering Excellence', description: 'We pride ourselves on delivering high-quality, scalable, and maintainable solutions that stand the test of time.', icon: 'âš¡' },
-    { title: 'Client-Centric Approach', description: 'Your success is our success. We partner with you to achieve your business goals, not just deliver technology.', icon: 'í´' },
-    { title: 'Continuous Innovation', description: 'We constantly explore emerging technologies to bring cutting-edge solutions to our clients.', icon: 'í²¡' }
+    { title: 'Client-Centric Approach', description: 'Your success is our success. We partner with you to achieve your business goals, not just deliver technology.', icon: 'ğŸ¤' },
+    { title: 'Continuous Innovation', description: 'We constantly explore emerging technologies to bring cutting-edge solutions to our clients.', icon: 'ğŸ’¡' }
   ];
 
   const milestones = [
@@ -162,22 +162,22 @@ const Company = () => {
                   <h3>What Makes Us Different</h3>
                   <div className="diff-grid">
                     <div className="diff-item">
-                      <div className="diff-icon">í¾¯</div>
+                      <div className="diff-icon">ğŸ“Š</div>
                       <h4>Scale</h4>
                       <p>Multi-thousand expert pool with diverse technological and domain backgrounds, available on demand for full-cycle implementation.</p>
                     </div>
                     <div className="diff-item">
-                      <div className="diff-icon">í³š</div>
+                      <div className="diff-icon">ğŸ“š</div>
                       <h4>Expertise</h4>
                       <p>25+ years of market experience with 1,530+ projects completed, gaining comprehensive technical and industry-specific knowledge.</p>
                     </div>
                     <div className="diff-item">
-                      <div className="diff-icon">í±ï¸</div>
+                      <div className="diff-icon">ğŸ‘ï¸</div>
                       <h4>Transparency</h4>
                       <p>Certified project managers, regular reporting, demos, and client access to test stands and project tracking tools.</p>
                     </div>
                     <div className="diff-item">
-                      <div className="diff-icon">í´„</div>
+                      <div className="diff-icon">ğŸ”„</div>
                       <h4>Flexibility</h4>
                       <p>Adjustable engagement scenarios and partnership schemes with optimal pricing models based on your requirements.</p>
                     </div>
@@ -202,8 +202,8 @@ const Company = () => {
                       <img src={member.image} alt={member.name} />
                       <div className="team-social">
                         <a href={member.linkedin} className="social-link">in</a>
-                        <a href={member.twitter} className="social-link">í°¦</a>
-                        <a href={`mailto:${member.email}`} className="social-link">í³§</a>
+                        <a href={member.twitter} className="social-link">ğ•</a>
+                        <a href={`mailto:${member.email}`} className="social-link">ğŸ“§</a>
                       </div>
                     </div>
                     <div className="team-info">
@@ -216,7 +216,7 @@ const Company = () => {
                         ))}
                       </div>
                       <div className="team-education">
-                        <span className="education-icon">í¾“</span>
+                        <span className="education-icon">ğŸ“</span>
                         <span>{member.education}</span>
                       </div>
                       <a href="/contact" className="connect-btn">Connect with {member.name.split(' ')[0]} â†’</a>
@@ -251,7 +251,7 @@ const Company = () => {
                 
                 <div className="culture-pillars">
                   <div className="pillar">
-                    <div className="pillar-icon">í²ª</div>
+                    <div className="pillar-icon">ğŸ’ª</div>
                     <h4>Commitment</h4>
                     <p>We empower and motivate our people to deliver exceptional results.</p>
                   </div>
@@ -261,12 +261,12 @@ const Company = () => {
                     <p>We strive for the highest quality in communication, decisions, and service.</p>
                   </div>
                   <div className="pillar">
-                    <div className="pillar-icon">í´¥</div>
+                    <div className="pillar-icon">ğŸ”¥</div>
                     <h4>Passion</h4>
                     <p>Passionate people drive innovation and accountability.</p>
                   </div>
                   <div className="pillar">
-                    <div className="pillar-icon">í´</div>
+                    <div className="pillar-icon">ğŸ”</div>
                     <h4>Clarity</h4>
                     <p>We ensure transparency and honesty with our clients and people.</p>
                   </div>

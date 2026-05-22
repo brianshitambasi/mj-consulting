@@ -27,7 +27,7 @@ const CaseStudies = () => {
         title: "COO, FreshFoods International"
       },
       image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&h=500&fit=crop',
-      icon: 'ï¿½ï¿½'
+      icon: 'ğŸ­'
     },
     {
       id: 2,
@@ -51,7 +51,7 @@ const CaseStudies = () => {
         title: "VP of Network Operations, TelcoConnect"
       },
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop',
-      icon: 'ï¿½ï¿½'
+      icon: 'ğŸ“¡'
     },
     {
       id: 3,
@@ -75,7 +75,7 @@ const CaseStudies = () => {
         title: "CEO, TechGlobal Solutions"
       },
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop',
-      icon: 'í²»'
+      icon: 'ğŸ’»'
     },
     {
       id: 4,
@@ -99,7 +99,7 @@ const CaseStudies = () => {
         title: "CDO, MegaRetail Corp"
       },
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=500&fit=crop',
-      icon: 'í»ï¸'
+      icon: 'ğŸ›ï¸'
     },
     {
       id: 5,
@@ -147,7 +147,7 @@ const CaseStudies = () => {
         title: "Global Director, Global Aid Foundation"
       },
       image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800&h=500&fit=crop',
-      icon: 'í´'
+      icon: 'ğŸ¤'
     }
   ];
 
@@ -181,8 +181,8 @@ const CaseStudies = () => {
               <div className="case-badge">{currentCase.industry}</div>
               <h2>{currentCase.title}</h2>
               <div className="case-meta">
-                <span>í³… Duration: {currentCase.duration}</span>
-                <span>í¿¢ Client: {currentCase.clientName}</span>
+                <span>ğŸ“… Duration: {currentCase.duration}</span>
+                <span>ğŸ¢ Client: {currentCase.clientName}</span>
               </div>
             </div>
           </div>

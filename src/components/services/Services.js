@@ -18,7 +18,7 @@ const Services = () => {
         'ROI analysis and planning'
       ],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
-      icon: 'í³Š',
+      icon: 'ðŸ“Š',
       link: '/services/it-consulting'
     },
     'Software engineering': {
@@ -34,7 +34,7 @@ const Services = () => {
         'Cloud-native application development'
       ],
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop',
-      icon: 'í²»',
+      icon: 'ðŸ’»',
       link: '/services/software-engineering'
     },
     'Application services': {
@@ -66,7 +66,7 @@ const Services = () => {
         'IT security management'
       ],
       image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
-      icon: 'í¶¥ï¸',
+      icon: 'ðŸ–¥ï¸',
       link: '/services/managed-it'
     },
     'DevOps': {
@@ -82,7 +82,7 @@ const Services = () => {
         'Monitoring and observability'
       ],
       image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop',
-      icon: 'íº€',
+      icon: 'ðŸš€',
       link: '/services/devops'
     },
     'Quality assurance & testing': {
@@ -114,7 +114,7 @@ const Services = () => {
         'Regular maintenance reports'
       ],
       image: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?w=600&h=400&fit=crop',
-      icon: 'í´§',
+      icon: 'ðŸ”§',
       link: '/services/maintenance'
     },
     'Smart teams': {
@@ -130,7 +130,7 @@ const Services = () => {
         'Knowledge transfer and documentation'
       ],
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
-      icon: 'í±¥',
+      icon: 'ðŸ‘¥',
       link: '/services/smart-teams'
     }
   };

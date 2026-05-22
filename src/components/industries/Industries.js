@@ -27,7 +27,7 @@ const Industries = () => {
       ],
       technologies: ['Salesforce Health Cloud', 'AWS Healthcare', 'Microsoft Azure for Health', 'Epic Integration', 'Cerner Integration'],
       image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop',
-      icon: 'í¿¥',
+      icon: 'ðŸ¥',
       stats: '50+ Healthcare Clients',
       successStories: 'Helped a major hospital reduce patient wait times by 40% through digital transformation'
     },
@@ -53,7 +53,7 @@ const Industries = () => {
       ],
       technologies: ['Salesforce Financial Cloud', 'AWS Banking', 'Microsoft Azure', 'Blockchain', 'AI Fraud Detection'],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      icon: 'í²°',
+      icon: 'ðŸ’°',
       stats: '100+ Financial Clients',
       successStories: 'Increased transaction processing speed by 60% for a major investment bank'
     },
@@ -79,7 +79,7 @@ const Industries = () => {
       ],
       technologies: ['AWS IoT', 'Microsoft Azure IoT', 'SAP Manufacturing', 'Odoo Manufacturing', 'Predictive Analytics'],
       image: 'https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&h=400&fit=crop',
-      icon: 'í¿­',
+      icon: 'ðŸ­',
       stats: '75+ Manufacturing Clients',
       successStories: 'Reduced equipment downtime by 35% through predictive maintenance implementation'
     },
@@ -105,7 +105,7 @@ const Industries = () => {
       ],
       technologies: ['Salesforce Commerce Cloud', 'Shopify', 'Magento', 'Odoo Retail', 'Power BI Analytics'],
       image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=600&h=400&fit=crop',
-      icon: 'í»ï¸',
+      icon: 'ðŸ›ï¸',
       stats: '120+ Retail Clients',
       successStories: 'Increased online sales by 85% after e-commerce platform migration'
     },
@@ -131,7 +131,7 @@ const Industries = () => {
       ],
       technologies: ['Salesforce Financial Cloud', 'Guidewire Integration', 'Duck Creek', 'AWS Insurance', 'AI Underwriting'],
       image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=400&fit=crop',
-      icon: 'í»¡ï¸',
+      icon: 'ðŸ›¡ï¸',
       stats: '60+ Insurance Clients',
       successStories: 'Reduced claims processing time by 50% with automated workflow system'
     },
@@ -157,7 +157,7 @@ const Industries = () => {
       ],
       technologies: ['AWS', 'Azure', 'GCP', 'Kubernetes', 'Docker', 'Microservices', 'AI/ML'],
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop',
-      icon: 'í²»',
+      icon: 'ðŸ’»',
       stats: '200+ Tech Clients',
       successStories: 'Helped a SaaS startup scale from 0 to 1 million users in 6 months'
     },
@@ -183,7 +183,7 @@ const Industries = () => {
       ],
       technologies: ['Salesforce Sales Cloud', 'Microsoft Dynamics 365', 'Atlassian Jira', 'Odoo CRM', 'Power BI'],
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop',
-      icon: 'í±”',
+      icon: 'ðŸ‘”',
       stats: '90+ Professional Services Clients',
       successStories: 'Increased billable utilization by 25% with PSA implementation'
     }

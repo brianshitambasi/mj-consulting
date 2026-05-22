@@ -13,7 +13,7 @@ const WhatsAppWidget = () => {
       rel="noopener noreferrer"
       className="whatsapp-widget"
     >
-      <span className="whatsapp-icon">í²¬</span>
+      <span className="whatsapp-icon">ðŸ’¬</span>
       <span>Chat with us</span>
     </a>
   );

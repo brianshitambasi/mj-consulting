@@ -1,41 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
 /* =========================
-   CONTACT PAGE WRAPPER
+   PAGE WRAPPER
 ========================= */
 .contact-page-wrapper {
-  padding-top: 80px;
-  background: linear-gradient(135deg, #00072d 0%, #0a2472 100%);
   min-height: 100vh;
+  background: linear-gradient(135deg, #00072d 0%, #0a2472 100%);
+  padding: 80px 20px;
 }
 
 /* =========================
    HERO SECTION
 ========================= */
 .contact-hero {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.4)
-  );
-  padding: 80px 0;
-  margin-bottom: 60px;
-}
-
-.contact-hero-content {
   text-align: center;
-  color: white;
+  margin-bottom: 50px;
 }
 
 .contact-hero-content h1 {
-  font-size: 3.5rem;
+  color: white;
+  font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .contact-hero-content p {
-  font-size: 1.2rem;
-  opacity: 0.95;
-  max-width: 600px;
-  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
 }
 
 /* =========================
@@ -43,295 +42,186 @@
 ========================= */
 .contact-container {
   max-width: 1200px;
-  margin: -50px auto 0;
-  padding: 0 20px;
+  margin: auto;
 }
 
 /* =========================
-   CONTACT GRID
+   CHATBOT CARD
 ========================= */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-/* =========================
-   CONTACT INFO CARD
-========================= */
-.contact-info-card {
+.chatbot-card {
   background: white;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  height: fit-content;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.contact-info-card h4 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #00072d;
+.chatbot-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.contact-icon-head {
-  font-size: 1.5rem;
-}
-
-.contact-details-list {
-  margin-bottom: 25px;
-}
-
-.contact-detail-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  background: #f8fafc;
-}
-
-.contact-icon-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  flex-shrink: 0;
-}
-
-.email-bg,
-.phone-bg,
-.location-bg {
-  background: linear-gradient(135deg, #00072d, #0a2472);
-}
-
-.whatsapp-bg {
-  background: #25d366;
-}
-
-.contact-detail-item p {
-  margin: 0;
-  font-weight: 600;
+.chatbot-header h3 {
   color: #00072d;
-}
-
-.contact-detail-item small {
-  font-size: 0.75rem;
-  color: #5a6e8a;
-}
-
-.text-muted {
-  color: #5a6e8a;
-}
-
-/* =========================
-   OFFICE HOURS
-========================= */
-.office-hours {
-  margin-bottom: 25px;
-}
-
-.office-hours h6 {
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #00072d;
-}
-
-.office-hours p {
-  font-size: 0.9rem;
-  color: #5a6e8a;
   margin-bottom: 5px;
 }
 
-/* =========================
-   WHATSAPP BUTTONS
-========================= */
-.whatsapp-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.whatsapp-chat-btn,
-.whatsapp-call-btn {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-chat-btn {
-  background: #25d366;
-  color: white;
-}
-
-.whatsapp-chat-btn:hover {
-  background: #128c7e;
-  transform: translateY(-2px);
-}
-
-.whatsapp-call-btn {
-  background: transparent;
-  color: #25d366;
-  border: 2px solid #25d366;
-}
-
-.whatsapp-call-btn:hover {
-  background: #25d366;
-  color: white;
-}
-
-/* =========================
-   CONTACT FORM
-========================= */
-.contact-form-card {
-  background: white;
-  border-radius: 15px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #00072d;
-}
-
-.contact-form-card > p {
+.chatbot-header p {
   color: #5a6e8a;
-  margin-bottom: 30px;
 }
 
-/* Alerts */
-.whatsapp-alert,
-.success-alert {
-  color: white;
-  padding: 12px 16px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.whatsapp-alert {
+.chat-status {
   background: #25d366;
-}
-
-.success-alert {
-  background: #4caf50;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 /* =========================
-   FORM STYLES
+   CHAT MESSAGES
 ========================= */
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.chatbot-messages {
+  height: 450px;
+  overflow-y: auto;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 20px;
   margin-bottom: 20px;
 }
 
-.form-group {
+.chat-message {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 16px;
 }
 
-.form-group.full-width {
-  grid-column: span 2;
+.chat-message.user {
+  justify-content: flex-end;
 }
 
-.form-group label {
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #00072d;
+.message-bubble {
+  max-width: 80%;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.form-group input,
-.form-group textarea {
-  padding: 12px;
+.chat-message.user .message-bubble {
+  background: linear-gradient(135deg, #00072d, #0a2472);
+  color: white;
+}
+
+.message-text {
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.message-time {
+  font-size: 0.7rem;
+  margin-top: 8px;
+  opacity: 0.7;
+  text-align: right;
+}
+
+/* =========================
+   TYPING INDICATOR
+========================= */
+.typing-indicator {
+  display: flex;
+  gap: 6px;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0a2472;
+  animation: bounce 1.3s infinite;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translateY(-8px);
+    opacity: 1;
+  }
+}
+
+/* =========================
+   CHAT INPUT
+========================= */
+.chatbot-input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chat-input-field {
+  flex: 1;
+  padding: 14px;
   border: 1px solid #dce3ec;
-  border-radius: 8px;
+  border-radius: 30px;
   font-size: 1rem;
-  transition: border-color 0.3s;
+  outline: none;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
+.chat-input-field:focus {
   border-color: #0a2472;
 }
 
-.submit-btn {
-  width: 100%;
-  padding: 14px;
+.chat-send-btn {
+  border: none;
   background: linear-gradient(135deg, #00072d, #0a2472);
   color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-.submit-btn:hover {
+.chat-send-btn:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #0a2472, #123499);
-}
-
-.submit-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
 }
 
 /* =========================
-   SERVICES SECTION
+   CHAT SUGGESTIONS
 ========================= */
-.services-section {
-  margin-bottom: 50px;
-}
-
-.services-card {
-  background: white;
-  border-radius: 15px;
-  padding: 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.services-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #00072d;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.service-item {
+.chat-suggestions {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
-  color: #5a6e8a;
 }
 
-.check-icon {
-  color: #25d366;
-  font-weight: bold;
+.chat-suggestions button {
+  border: 1px solid #dce3ec;
+  background: #f8fafc;
+  padding: 10px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.chat-suggestions button:hover {
+  background: #0a2472;
+  color: white;
 }
 
 /* =========================
@@ -347,34 +237,252 @@
 }
 
 .team-header h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin-bottom: 15px;
   color: white;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .team-header p {
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.85);
 }
 
-/* Team Grid */
+/* =========================
+   TEAM GRID
+========================= */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
-/* Team Card */
+/* =========================
+   TEAM CARD
+========================= */
 .team-card {
   background: white;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-avatar {
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.team-avatar img {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 25px;
+}
+
+.team-info h3 {
+  color: #00072d;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.team-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #00072d, #0a2472);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.team-bio {
+  color: #5a6e8a;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   EXPERTISE
+========================= */
+.team-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.expertise-badge {
+  background: #eef2ff;
+  color: #0a2472;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* =========================
+   CONTACT ROW
+========================= */
+.contact-row {
+  margin-bottom: 10px;
+  color: #5a6e8a;
+}
+
+.contact-row a {
+  color: #0a2472;
+  text-decoration: none;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  color: #00072d;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: #5a6e8a;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+.chatbot-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+  background: #eef2f6;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: #0a2472;
+  border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .chatbot-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .chatbot-input-area {
+    flex-direction: column;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-avatar {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-card,
+  .team-info,
+  .stat-card {
+    padding: 20px;
+  }
+
+  .team-avatar {
+    height: 260px;
+  }
+
+  .contact-hero-content h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+.team-section {
+  margin-bottom: 60px;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-header h2 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.team-header p {
+  color: rgba(255,255,255,0.9);
+  font-size: 1.05rem;
+}
+
+/* =========================
+   TEAM GRID
+========================= */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/* =========================
+   TEAM CARD
+========================= */
+.team-card {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+  transition: all 0.35s ease;
+  position: relative;
 }
 
 .team-card:hover {
@@ -388,125 +496,158 @@
 }
 
 /* =========================
-   FULL IMAGE FIX
+   FULL PHOTO SECTION
 ========================= */
 .team-avatar {
   width: 100%;
-  height: 420px;
-  background: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 520px;
   overflow: hidden;
-  padding: 10px;
+  background: #f3f4f6;
+  position: relative;
 }
 
-/* FULL IMAGE DISPLAY */
+/* FULL IMAGE */
 .team-avatar img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
   display: block;
-  transition: none;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
 }
 
-/* Remove zoom effect */
+/* Hover Zoom */
 .team-card:hover .team-avatar img {
-  transform: none;
+  transform: scale(1.04);
 }
 
 /* =========================
    TEAM INFO
 ========================= */
 .team-info {
-  padding: 25px;
+  padding: 28px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
 .team-info h3 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 800;
-  margin-bottom: 5px;
   color: #00072d;
+  margin-bottom: 8px;
+  line-height: 1.2;
 }
 
+/* Badge */
 .team-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, #00072d, #0a2472);
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
+  padding: 7px 18px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #00072d, #0a2472);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
 }
 
+/* Bio */
 .team-bio {
   color: #5a6e8a;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  line-height: 1.7;
+  font-size: 0.96rem;
+  margin-bottom: 22px;
 }
 
+/* =========================
+   EXPERTISE TAGS
+========================= */
 .team-expertise {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
+  gap: 10px;
+  margin-bottom: 24px;
 }
 
 .expertise-badge {
-  background: #f0f4f8;
+  background: #eef3ff;
   color: #0a2472;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 0.75rem;
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-/* Contact Info */
+.expertise-badge:hover {
+  background: #0a2472;
+  color: #ffffff;
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
 .team-contact-info {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 }
 
 .contact-row {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-  font-size: 0.85rem;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.92rem;
+}
+
+.contact-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00072d, #0a2472);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
 .contact-row a {
-  color: #5a6e8a;
   text-decoration: none;
+  color: #5a6e8a;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .contact-row a:hover {
   color: #0a2472;
 }
 
-/* Social Links */
+/* =========================
+   SOCIAL LINKS
+========================= */
 .team-social-links {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin-top: auto;
 }
 
 .social-link {
-  width: 35px;
-  height: 35px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: all 0.3s ease;
   color: white;
   font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
 .social-link.linkedin {
@@ -514,7 +655,7 @@
 }
 
 .social-link.twitter {
-  background: #1da1f2;
+  background: #111827;
 }
 
 .social-link.whatsapp {
@@ -522,115 +663,61 @@
 }
 
 .social-link:hover {
-  transform: scale(1.1);
-}
-
-/* =========================
-   STATS SECTION
-========================= */
-.stats-section {
-  margin-bottom: 50px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-.stat-card {
-  background: white;
-  text-align: center;
-  padding: 30px;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
-}
-
-.stat-card:hover {
-  transform: translateY(-5px);
-}
-
-.stat-icon {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-}
-
-.stat-card h3 {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 5px;
-  color: #00072d;
-}
-
-.stat-card p {
-  color: #5a6e8a;
-  margin: 0;
+  transform: translateY(-4px) scale(1.08);
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
-@media (max-width: 992px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
+@media (max-width: 1100px) {
   .team-grid {
     grid-template-columns: 1fr;
   }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-
   .team-avatar {
-    height: 380px;
+    height: 500px;
   }
 }
 
 @media (max-width: 768px) {
-  .contact-hero-content h1 {
+  .team-header h2 {
     font-size: 2rem;
   }
 
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .form-group.full-width {
-    grid-column: span 1;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .team-header h2 {
-    font-size: 1.8rem;
-  }
-
-  .contact-form-card,
-  .contact-info-card {
-    padding: 25px;
+  .team-info {
+    padding: 22px;
   }
 
   .team-avatar {
-    height: 320px;
+    height: 420px;
+  }
+
+  .team-info h3 {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 576px) {
   .team-avatar {
-    height: 280px;
+    height: 360px;
+  }
+
+  .team-info {
+    padding: 20px;
+  }
+
+  .team-bio {
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .team-avatar {
-    height: 250px;
+    height: 300px;
+  }
+
+  .social-link {
+    width: 38px;
+    height: 38px;
   }
 }

@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
 
+// Import local images from assets
+import founder1Image from '../../assets/images/h25.jpeg';
+import founder2Image from '../../assets/images/h26.jpeg';
+
 const Contact = () => {
   const [formData, setFormData] = useState({ 
     name: '', 
@@ -13,7 +17,6 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [applicationDetected, setApplicationDetected] = useState(false);
 
-  // Check for pending job application on component mount
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const hasApplication = urlParams.get('application') === 'pending';
@@ -57,13 +60,11 @@ const Contact = () => {
     }
   }, []);
 
-  // WhatsApp configuration
   const whatsappNumber = '254723156066';
   const whatsappMessage = encodeURIComponent('Hello! I would like to get more information about your services.');
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
   const whatsappCallLink = `https://wa.me/${whatsappNumber}`;
 
-  // Real founders/owners
   const owners = [
     {
       id: 1,
@@ -73,7 +74,7 @@ const Contact = () => {
       phone: "+254723156066",
       whatsapp: "254723156066",
       bio: "15+ years of experience in enterprise technology and digital transformation. Visionary leader driving MJ&Roberts' mission to bridge the innovation-infrastructure gap.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      avatar: founder1Image,
       social: { linkedin: "#", twitter: "#" },
       expertise: ["Business Strategy", "Digital Transformation", "Enterprise Architecture", "Leadership"]
     },
@@ -85,7 +86,7 @@ const Contact = () => {
       phone: "+254723156066",
       whatsapp: "254723156066",
       bio: "Technology architect with deep expertise in cloud, AI, and resilient system design. Leads engineering teams to deliver scalable, secure solutions for global enterprises.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      avatar: founder2Image,
       social: { linkedin: "#", twitter: "#" },
       expertise: ["Cloud Architecture", "AI/ML", "Resilient Systems", "DevOps"]
     }
@@ -138,7 +139,6 @@ WhatsApp: +254 723 156066
 
   return (
     <div className="contact-page-wrapper">
-      {/* Hero Section */}
       <div className="contact-hero">
         <div className="container">
           <div className="contact-hero-content">
@@ -149,9 +149,7 @@ WhatsApp: +254 723 156066
       </div>
 
       <div className="contact-container">
-        {/* Main Contact Section */}
         <div className="contact-grid">
-          {/* Contact Info Card */}
           <div className="contact-info-card">
             <h4>
               <span className="contact-icon-head">📞</span>
@@ -218,7 +216,6 @@ WhatsApp: +254 723 156066
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="contact-form-card">
             <h3>{applicationDetected ? 'Complete Your Job Application' : 'Send us a message'}</h3>
             <p>{applicationDetected ? 'Please review your application details below and click send to submit your job application.' : 'Fill out the form below and we\'ll get back to you within 24 hours'}</p>
@@ -268,7 +265,6 @@ WhatsApp: +254 723 156066
           </div>
         </div>
 
-        {/* Services Section */}
         <div className="services-section">
           <div className="services-card">
             <h3>
@@ -286,7 +282,6 @@ WhatsApp: +254 723 156066
           </div>
         </div>
 
-        {/* Leadership Team Section */}
         <div className="team-section">
           <div className="team-header">
             <h2>
@@ -337,7 +332,6 @@ WhatsApp: +254 723 156066
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="stats-section">
           <div className="stats-grid">
             <div className="stat-card">

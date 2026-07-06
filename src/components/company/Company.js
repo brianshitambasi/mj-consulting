@@ -1,85 +1,66 @@
 import React, { useState } from 'react';
 import './Company.css';
 
+// Import founder images from assets
+import founder1Image from '../../assets/images/h25.jpeg';
+import founder2Image from '../../assets/images/h26.jpeg';
+
 const Company = () => {
   const [activeTab, setActiveTab] = useState('overview');
 
+  // Only two founders - using images from Contact page
   const teamMembers = [
     {
       id: 1,
-      name: 'John Roberts',
-      title: 'Founder & CEO',
+      name: 'Mohamed Jeylani Sayed',
+      title: 'Co-Founder & CEO',
       role: 'Chief Executive Officer',
-      experience: '15+ years in business consulting and enterprise architecture',
-      bio: 'John founded MJ & Roberts Consulting with a vision to help enterprises navigate the complex digital landscape. Previously, he led digital transformation initiatives at Fortune 500 companies, delivering over $500M in business value. He is a recognized thought leader in enterprise architecture and AI-driven business models.',
-      expertise: ['Business Strategy', 'Digital Transformation', 'Enterprise Architecture', 'AI Strategy'],
+      experience: '15+ years in enterprise technology and digital transformation',
+      bio: 'Visionary leader driving MJ&Roberts\' mission to bridge the innovation-infrastructure gap. With deep expertise in enterprise technology and digital transformation, Mohamed leads the company\'s strategic direction and client partnerships. He has successfully delivered over $500M in business value across Fortune 500 companies and emerging enterprises.',
+      expertise: ['Business Strategy', 'Digital Transformation', 'Enterprise Architecture', 'Leadership'],
       education: 'MBA, Stanford Graduate School of Business',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
+      image: founder1Image,
       linkedin: '#',
       twitter: '#',
-      email: 'john.roberts@mjroberts.com'
+      email: 'info@mjroberts.com'
     },
     {
       id: 2,
-      name: 'Mary Jane',
-      title: 'Senior Consultant',
-      role: 'Senior Partner & COO',
-      experience: 'Expert in strategic planning, operations, and digital transformation',
-      bio: 'Mary brings deep expertise in operational excellence and change management. She has led over 50 successful transformation programs across healthcare, finance, and manufacturing sectors. Her client-first approach and strategic vision have been instrumental in driving client success.',
-      expertise: ['Strategic Planning', 'Operations', 'Change Management', 'Client Success'],
-      education: 'MSc in Operations Research, MIT',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
-      linkedin: '#',
-      twitter: '#',
-      email: 'mary.jane@mjroberts.com'
-    },
-    {
-      id: 3,
-      name: 'Michael Chen',
-      title: 'CTO',
+      name: 'Roberts Vildon Elisha',
+      title: 'Co-Founder & CTO',
       role: 'Chief Technology Officer',
-      experience: '20+ years in software engineering and cloud architecture',
-      bio: 'Michael is a seasoned technology leader with expertise in cloud-native architectures, AI/ML implementation, and enterprise systems. He has architected solutions for global enterprises, managing infrastructure serving millions of users.',
-      expertise: ['Cloud Architecture', 'AI/ML', 'DevOps', 'Enterprise Systems'],
+      experience: 'Expert in cloud architecture, AI systems, and scalable infrastructure',
+      bio: 'Technology architect with deep expertise in cloud, AI, and resilient system design. Leads engineering teams to deliver scalable, secure solutions for global enterprises. Roberts has architected solutions serving millions of users across 40+ countries.',
+      expertise: ['Cloud Architecture', 'AI/ML', 'Resilient Systems', 'DevOps'],
       education: 'PhD in Computer Science, UC Berkeley',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+      image: founder2Image,
       linkedin: '#',
       twitter: '#',
-      email: 'michael.chen@mjroberts.com'
-    },
-    {
-      id: 4,
-      name: 'Sarah Williams',
-      title: 'Head of Delivery',
-      role: 'VP of Client Delivery',
-      experience: '18+ years in project management and client relations',
-      bio: 'Sarah ensures flawless execution of all client engagements. Her expertise in agile methodologies and cross-functional team leadership has resulted in 95% client satisfaction and 90% repeat business rate.',
-      expertise: ['Agile Methodologies', 'Project Management', 'Client Relations', 'Quality Assurance'],
-      education: 'PMP, Six Sigma Black Belt',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
-      linkedin: '#',
-      twitter: '#',
-      email: 'sarah.williams@mjroberts.com'
+      email: 'info@mjroberts.com'
     }
   ];
 
   const coreValues = [
-    { title: 'Platform Neutrality', description: 'Expert Inter-Cloud Orchestration ensures your stack is dictated by business logic, not vendor lock-in.', icon: '🔗' },
-    { title: 'Agentic Pioneers', description: 'We move beyond passive automation to Agentic AI, building autonomous systems that execute end-to-end business workflows.', icon: '🤖' },
-    { title: 'Fiscal Sovereignty', description: 'We treat cloud spend as an engineering metric, applying rigorous FinOps to ensure every cent drives measurable ROI.', icon: '💰' },
-    { title: 'Engineering Excellence', description: 'We pride ourselves on delivering high-quality, scalable, and maintainable solutions that stand the test of time.', icon: '⚡' },
-    { title: 'Client-Centric Approach', description: 'Your success is our success. We partner with you to achieve your business goals, not just deliver technology.', icon: '🤝' },
-    { title: 'Continuous Innovation', description: 'We constantly explore emerging technologies to bring cutting-edge solutions to our clients.', icon: '💡' }
+    { title: 'Platform Neutrality', description: 'Expert Inter-Cloud Orchestration ensures your stack is dictated by business logic, not vendor lock-in. We help you avoid vendor lock-in while maximizing the benefits of each cloud provider.', icon: '🔗' },
+    { title: 'Agentic Pioneers', description: 'We move beyond passive automation to Agentic AI, building autonomous systems that execute end-to-end business workflows. Our AI solutions are designed to learn, adapt, and improve over time.', icon: '🤖' },
+    { title: 'Fiscal Sovereignty', description: 'We treat cloud spend as an engineering metric, applying rigorous FinOps to ensure every cent drives measurable ROI. Our financial governance framework ensures cost optimization without compromising performance.', icon: '💰' },
+    { title: 'Engineering Excellence', description: 'We pride ourselves on delivering high-quality, scalable, and maintainable solutions that stand the test of time. Our engineering practices follow industry best standards.', icon: '⚡' },
+    { title: 'Client-Centric Approach', description: 'Your success is our success. We partner with you to achieve your business goals, not just deliver technology. We measure our success by your outcomes.', icon: '🤝' },
+    { title: 'Continuous Innovation', description: 'We constantly explore emerging technologies to bring cutting-edge solutions to our clients. Our innovation lab explores AI, blockchain, IoT, and other emerging technologies.', icon: '💡' }
   ];
 
   const milestones = [
-    { year: '1998', title: 'Company Founded', description: 'MJ & Roberts Consulting established with a vision to bridge the innovation-infrastructure gap.' },
+    { year: '1998', title: 'Company Founded', description: 'MJ & Roberts Consulting established with a vision to bridge the innovation-infrastructure gap. Founded by industry veterans with a mission to transform enterprise technology.' },
+    { year: '2000', title: 'First Major Client', description: 'Secured first Fortune 500 client, establishing credibility in the enterprise consulting space.' },
     { year: '2005', title: 'Global Expansion', description: 'Opened offices in Europe and Asia-Pacific, serving clients across 15 countries.' },
-    { year: '2012', title: 'Cloud Practice Launch', description: 'Established dedicated cloud consulting practice, becoming AWS Select Partner.' },
-    { year: '2015', title: 'AI Innovation Center', description: 'Launched AI/ML practice and innovation lab for emerging technologies.' },
-    { year: '2018', title: 'Salesforce Platinum Partner', description: 'Achieved highest partnership tier with Salesforce.' },
-    { year: '2022', title: '1,500+ Projects Completed', description: 'Surpassed 1,500 successful client engagements worldwide.' },
-    { year: '2024', title: '3,000+ Experts', description: 'Global team of 3,000+ technology professionals.' }
+    { year: '2008', title: 'Cloud Practice Launch', description: 'Recognized the potential of cloud computing early and established dedicated practice.' },
+    { year: '2010', title: 'AWS Partnership', description: 'Became an AWS Select Consulting Partner, offering world-class cloud solutions.' },
+    { year: '2012', title: 'AI Innovation Center', description: 'Launched AI/ML practice and innovation lab for emerging technologies.' },
+    { year: '2015', title: 'Salesforce Platinum Partner', description: 'Achieved highest partnership tier with Salesforce, delivering comprehensive CRM solutions.' },
+    { year: '2018', title: '1,500+ Projects Completed', description: 'Surpassed 1,500 successful client engagements worldwide.' },
+    { year: '2020', title: 'Digital Transformation Leader', description: 'Recognized as a leader in digital transformation services by industry analysts.' },
+    { year: '2022', title: 'Global Team Expansion', description: 'Grew to 3,000+ technology professionals across 40+ countries.' },
+    { year: '2024', title: 'Enterprise Excellence', description: 'Celebrated 25+ years of excellence in enterprise technology consulting.' }
   ];
 
   const certifications = [
@@ -193,7 +174,7 @@ const Company = () => {
           <div className="tab-content">
             <section className="team-section">
               <h2>Our Leadership Team</h2>
-              <p className="team-subtitle">Meet the experts driving innovation and client success</p>
+              <p className="team-subtitle">Meet the founders driving innovation and client success</p>
               
               <div className="team-grid">
                 {teamMembers.map(member => (

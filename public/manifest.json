@@ -1,31 +1,15 @@
 {
   "short_name": "MJ&Roberts",
   "name": "MJ & Roberts Consulting",
-  "description": "Engineering Resilience into the Global Enterprise - IT Consulting, Digital Transformation, Cloud Solutions",
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any maskable"
+      "src": "logo.webp",
+      "type": "image/webp",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#00072d",
-  "background_color": "#ffffff",
-  "orientation": "portrait-primary",
-  "scope": "/"
+  "background_color": "#ffffff"
 }

@@ -1,82 +1,23 @@
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 12px;
   text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-.logo-container:hover {
-  opacity: 0.9;
 }
 
 .logo-image {
-  height: 40px;
+  height: 45px;
   width: auto;
   display: block;
-  object-fit: contain;
-}
-
-.logo-text {
-  display: flex;
-  align-items: baseline;
-  gap: 2px;
-  flex-wrap: wrap;
-}
-
-.logo-mj {
-  font-size: 20px;
-  font-weight: 800;
-  color: #00072d;
-  letter-spacing: -0.5px;
-}
-
-.logo-symbol {
-  font-size: 18px;
-  font-weight: 600;
-  color: #5ea173;
-  margin: 0 2px;
-}
-
-.logo-roberts {
-  font-size: 20px;
-  font-weight: 700;
-  color: #0a2472;
-  letter-spacing: -0.5px;
-}
-
-.logo-consulting {
-  font-size: 12px;
-  font-weight: 500;
-  color: #5a6e8a;
-  margin-left: 4px;
-  letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
-  .logo-consulting {
-    display: none;
-  }
-  
-  .logo-mj, .logo-roberts {
-    font-size: 16px;
-  }
-  
-  .logo-symbol {
-    font-size: 14px;
-  }
-  
   .logo-image {
-    height: 32px;
+    height: 35px;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-text {
-    display: none;
-  }
-  
   .logo-image {
-    height: 36px;
+    height: 30px;
   }
 }
